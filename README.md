@@ -10,3 +10,7 @@ docker ps
 ```bash
 docker-compose -f <docker-compose-file-name> run --rm <service-name> sh
 ```
+3. Get a shell inside a running Docker container:
+```bash
+docker exec -it <container_name_or_id> sh
+```
