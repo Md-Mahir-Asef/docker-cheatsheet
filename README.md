@@ -14,3 +14,7 @@ docker-compose -f <docker-compose-file-name> run --rm <service-name> sh
 ```bash
 docker exec -it <container_name_or_id> sh
 ```
+4. Build a Docker service with Docker Compose and see which stage it is in:
+```
+docker compose build <service_name> --progress=plain
+```
