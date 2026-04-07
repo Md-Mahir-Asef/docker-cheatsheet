@@ -18,3 +18,7 @@ docker exec -it <container_name_or_id> sh
 ```
 docker compose build <service_name> --progress=plain
 ```
+5. Build and run a single Docker image:
+```
+docker build -t test-prod .
+```
