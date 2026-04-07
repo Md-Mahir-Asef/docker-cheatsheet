@@ -28,5 +28,5 @@ docker stop image_name
 ```
 7. Run a Docker image:
 ```bash
-docker run -p 3000:3000 --env-file .env image_name
+docker run -it -p 3000:3000 --env-file .env image_name
 ```
