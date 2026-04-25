@@ -30,12 +30,16 @@ docker stop image_name
 ```bash
 docker run -it -p 3000:3000 --env-file .env image_name
 ```
-## Push to Docker Hub
-1. Tag your image correctly to push to Docker Hub. Docker Hub requires this format:
+## Push to Docker Hub Workflow
+1. Build and run a single Docker image:
+```bash
+docker build -t new(any)_image_name .(Where the Dockerfile is)
+```
+2. Tag your image correctly to push to Docker Hub. Docker Hub requires this format:
 ```bash
 docker tag my-app mdmahirasef/my-app
 ```
-2. Push the image:
+3. Push the image:
 ```bash
 docker push mdmahirasef/my-app
 ```
